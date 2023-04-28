@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
-const allSelections = document.querySelectorAll('.main-content');
+const allSelections = document.querySelector('.main-content');
 
 pageTransitions= () =>{
     //boton para activar clases activas
@@ -12,6 +12,27 @@ pageTransitions= () =>{
             e.target.classList += ' active-btn'
         })
     }
+
+    //section active class
+    allSelections.addEventListener('click', (e)=>{
+        const id = e.target.dataset.id;
+        if (id){
+            //remueve el seleccionado de btns
+            sectBtns.forEach((btn) =>{
+                btn.classList.remove('active')
+            })
+            e.target.classList.add('active')
+
+            //esconde secciones no activas
+            sections.forEach((section)=>{
+                section.classList.remove('active')
+            })
+
+            const element = document.getElementById(id);
+            element.classList.add('active');
+        }
+    })
+
 }
 
-pageTransitions()
+pageTransitions();
