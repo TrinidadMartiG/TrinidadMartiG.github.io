@@ -84,7 +84,6 @@ section {
     }
   }
 }
-
 //controls
 .controls {
   position: fixed;
@@ -148,12 +147,12 @@ section {
       width: 68%;
       margin-left: 4rem;
       background-color: var(--color-black);
-      transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: all .4 ease-in-out;
+        transition: all 0.4s ease-in-out;
         filter: grayscale(100%);
         &:hover {
           filter: grayscale(0);
@@ -172,32 +171,127 @@ section {
         color: var(--color-secondary);
       }
     }
-    p{
+    p {
       margin: 1.5rem 0;
       line-height: 2rem;
     }
   }
 }
+
+//about
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  .right-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    .about-item {
+      border: 1px solid var(--color-grey-5);
+      border-radius: 5px;
+      transition: all .4s ease-in-out;
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+      &:hover{
+        cursor: default;
+        transform: translateY(-5px);
+        border: 1px solid var(--color-secondary);
+        box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+      }
+    }
+    .abt-txt {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      .large-txt {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-secondary);
+      }
+      .small-txt {
+        padding-left: 3rem;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: var(--color-grey-1);
+        letter-spacing: 2px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15px;
+          width: 2rem;
+          height: 2px;
+          background-color: var(--color-grey-5);
+        }
+      }
+    }
+  }
+  .left-about{
+    padding-right: 5rem;
+    p{
+      line-height: 2rem;
+      padding: 1rem;
+      color: var(--color-grey-1);
+    }
+    h4{
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.about-stats-container{
+  padding-bottom: 4rem;
+  text-align: center;
+  .about-stats{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    .skill{
+      .skill-title{
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.stat-title{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+  // &::before{
+  //   content: '';
+  //   left: 50%;
+  //   top: 0;
+  //   width: 40%;
+  //   height: 1px;
+  //   background-color: var(--color-grey-5);
+  //   transform: translateX(-50%);
+  // }
+}
 //componentes independientes
-.btn-container{
+.btn-container {
   display: flex;
   align-self: flex-start;
 }
-.main-btn{
+.main-btn {
   border-radius: 30px;
   font-size: inherit;
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
-  display:flex;
+  display: flex;
   align-items: flex-start;
   display: flex;
   align-items: center;
   overflow: hidden;
-  .btn-text{
+  .btn-text {
     padding: 0 2rem;
   }
-  .btn-icon{
+  .btn-icon {
     background-color: var(--color-secondary);
     display: flex;
     align-items: center;
@@ -205,21 +299,44 @@ section {
     border-radius: 50%;
     padding: 1rem;
   }
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     transform: translateX(100%);
-    transition: all .4s ease-out;
+    transition: all 0.4s ease-out;
     z-index: -1;
   }
-  &:hover{
-    &::before{
+  &:hover {
+    &::before {
       width: 100%;
       height: 100%;
       background-color: var(--color-secondary);
       transform: translateX(0);
     }
   }
-} 
+}
+
+.main-title {
+  text-align: center;
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    span {
+      color: var(--color-secondary);
+    }
+    .bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: var(--color-grey-5);
+      transition: all 0.4s ease-in-out;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      font-weight: 800;
+    }
+  }
+}
