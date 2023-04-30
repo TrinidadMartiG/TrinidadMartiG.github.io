@@ -252,6 +252,10 @@ section {
       .skill-title{
         text-transform: uppercase;
         font-weight: 500;
+        .svg{
+          width: 25%;
+          height: 25%;
+        }
       }
     }
   }

@@ -259,6 +259,10 @@ section {
   text-transform: uppercase;
   font-weight: 500;
 }
+.about-stats-container .about-stats .skill .skill-title .svg {
+  width: 25%;
+  height: 25%;
+}
 
 .stat-title {
   text-transform: uppercase;
