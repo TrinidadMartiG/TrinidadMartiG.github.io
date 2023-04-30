@@ -242,20 +242,34 @@ section {
   }
 }
 .about-stats-container{
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   text-align: center;
   .about-stats{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     .skill{
-      .skill-title{
-        text-transform: uppercase;
-        font-weight: 500;
-        .svg{
-          width: 25%;
-          height: 25%;
-        }
+      display: flex; /* add this */
+      justify-content: center; /* add this */
+      align-items: center; /* add this */
+    }
+    .skill-title{
+      text-transform: uppercase;
+      font-weight: 500;
+      .svg{
+        position: relative;
+        top: 2px;
+        width: 25%;
+        height: 25%;
+        border-radius: 5px;
+        transition: all .4s ease-in-out;
+        box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+        &:hover{
+          cursor: default;
+          transform: translateY(-5px);
+          border: 1px solid var(--color-secondary);
+          box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+      }
       }
     }
   }
@@ -292,6 +306,7 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  
   .btn-text {
     padding: 0 2rem;
   }
@@ -320,6 +335,10 @@ section {
       transform: translateX(0);
     }
   }
+}
+.main-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .main-title {
