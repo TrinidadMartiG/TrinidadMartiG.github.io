@@ -32,7 +32,12 @@ pageTransitions= () =>{
             element.classList.add('active');
         }
     })
-
+ //activar tema oscuro
+ const themeBtn = document.querySelector('.theme-btn');
+ themeBtn.addEventListener('click',()=>{
+    let element = document.body;
+    element.classList.toggle('light-mode')
+ })
 }
 
 pageTransitions();
