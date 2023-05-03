@@ -370,6 +370,15 @@ section {
   transform: scale(1.05);
 }
 
+//contactame section
+.contact-content-con{
+  display: flex;
+  padding-top: 3.5rem;
+  .left-contact{
+    flex: 2;
+  }
+}
+
 //componentes independientes
 .btn-container {
   display: flex;

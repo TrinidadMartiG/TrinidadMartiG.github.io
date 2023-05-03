@@ -366,6 +366,14 @@ section {
   transform: scale(1.05);
 }
 
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+
 .btn-container {
   display: flex;
   align-self: flex-start;
