@@ -336,6 +336,9 @@ section {
   padding: 3.5rem 0;
   position: relative;
 }
+.stat-title span {
+  color: var(--color-secondary);
+}
 
 .portfolio-text {
   padding: 2rem 0;

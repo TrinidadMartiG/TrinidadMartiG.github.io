@@ -342,6 +342,7 @@ section {
       text-transform: uppercase;
       font-weight: 500;
 
+
       .svg {
         position: relative;
         top: 2px;
@@ -370,7 +371,9 @@ section {
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
-
+span {
+        color: var(--color-secondary);
+      }
 }
 
 //
