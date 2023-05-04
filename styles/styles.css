@@ -209,7 +209,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
+  padding-right: 15rem;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -273,16 +273,21 @@ section {
   background-color: var(--color-grey-5);
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 4rem;
 }
 .about-container .left-about p {
   line-height: 2rem;
-  padding: 1rem;
+  padding-left: 1rem;
   color: var(--color-grey-1);
+  padding-bottom: 0.5rem;
 }
-.about-container .left-about h4 {
+.about-container h4 {
   font-size: 2rem;
   text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+.about-container .btn-container {
+  padding-top: 1rem;
 }
 
 .about-stats-container {

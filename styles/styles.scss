@@ -221,7 +221,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 18rem;
+    padding-right: 15rem;
 
     .name {
       font-size: 3rem;
@@ -298,20 +298,27 @@ section {
   }
 
   .left-about {
-    padding-right: 5rem;
+    padding-right: 4rem;
 
     p {
       line-height: 2rem;
-      padding: 1rem;
+      padding-left: 1rem;
       color: var(--color-grey-1);
+      padding-bottom: .5rem;
     }
-
+    
+  }
     h4 {
       font-size: 2rem;
       text-transform: uppercase;
+      padding-bottom: 1.5rem;
     }
+    .btn-container{
+      padding-top: 1rem;
+    }
+    
   }
-}
+
 
 .about-stats-container {
   padding-bottom: 3rem;
