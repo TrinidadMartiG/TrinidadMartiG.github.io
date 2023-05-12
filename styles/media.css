@@ -17,7 +17,7 @@
     padding-bottom: 6rem;
   }
   .portfolios {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     padding-bottom: 6rem;
   }
   .section {
@@ -119,6 +119,17 @@
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 0.6rem 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  .main-title h2 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=media.css.map */
