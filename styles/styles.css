@@ -182,8 +182,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
-          clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 50% 0, 75% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: 15px;
@@ -619,19 +619,6 @@ section {
   .main-title h2 .bg-text {
     font-size: 2.5rem;
   }
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls .control {
-    margin: 1rem 0.3rem;
-  }
 }
 @media screen and (max-width: 1432px) {
   header {
@@ -707,5 +694,18 @@ section {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

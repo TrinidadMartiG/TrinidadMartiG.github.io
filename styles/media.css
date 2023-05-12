@@ -32,19 +32,6 @@
   .main-title h2 .bg-text {
     font-size: 2.5rem;
   }
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls .control {
-    margin: 1rem 0.3rem;
-  }
 }
 @media screen and (max-width: 1432px) {
   header {
@@ -120,5 +107,18 @@
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
   }
 }/*# sourceMappingURL=media.css.map */

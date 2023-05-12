@@ -191,8 +191,7 @@ section {
       left: 0;
       top: 0;
       z-index: -1;
-      clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
-    }
+      clip-path: polygon(0 0, 50% 0, 75% 100%, 0% 100%);    }
 
     .image {
       border-radius: 15px;
