@@ -40,7 +40,7 @@
           <div class="btn-container">
             <a
               download
-              href="/Trinidad_Martí Gutiérrez_Resume_03-04-2023-16-26-34_compressed.pdf"
+              href="/Trinidad_Martí Gutiérrez_Resume.pdf"
               class="main-btn"
             >
               <span class="btn-text">Obten mi CV!</span>
@@ -70,7 +70,7 @@
             <div class="btn-container">
               <a
                 download
-                href="/Trinidad_Martí Gutiérrez_Resume_03-04-2023-16-26-34_compressed.pdf"
+                href="/Trinidad_Martí Gutiérrez_Resume.pdf"
                 class="main-btn"
               >
                 <span class="btn-text">Descarga mi CV!</span>
@@ -359,21 +359,23 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" class="contact-form">
+              <form action="https://formsubmit.co/trinidad.martig@gmail.com" method="POST" class="contact-form" >
                 <div class="input-control i-c-2">
                   <input
                     type="text"
                     placeholder="Nombre"
                     required
-                    name=""
-                    id=""
+                    name="name"
+                    id="name"
                   />
+                </div>
+                <div class="input-control ">
                   <input
                     type="email"
                     placeholder="Correo"
                     required
-                    name=""
-                    id=""
+                    name="from"
+                    id="from"
                   />
                 </div>
                 <div class="input-control">
@@ -381,28 +383,29 @@
                     type="text"
                     placeholder="Asunto"
                     required
-                    name=""
-                    id=""
+                    name="subject"
+                    id="subject"
                   />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
+                    name="message"
                     placeholder="Su lindo mensaje aquí ❤️"
-                    id=""
+                    id="message"
                     cols="15"
                     rows="8"
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a
+                  <button
                     class="main-btn"
+                    type="submit"
                   >
                     <span class="btn-text">Enviar</span>
                     <span class="btn-icon">
                       <i class="fa-solid fa-paper-plane"></i>
                     </span>
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>

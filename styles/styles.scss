@@ -31,7 +31,7 @@
   --color-grey-2: #6c7983;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
+  --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
 }
 
@@ -563,7 +563,7 @@ span {
       display: flex;
       margin-top: 2rem;
 
-      a {
+       a{
         display: flex;
         align-items: center;
         color: var(--color-white);
@@ -625,6 +625,7 @@ span {
       display: flex;
       justify-content: flex-end;
     }
+   
   }
 }
 
@@ -645,9 +646,13 @@ span {
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: transparent; /* Agregado */
+
+  
 
   .btn-text {
     padding: 0 2rem;
+    color: var(--color-white);
   }
 
   .btn-icon {
